@@ -6,12 +6,12 @@ apply plugin: 'net.corda.plugins.quasar-utils'
 sourceSets {
     main {
         resources {
-            srcDir "config/dev"
+            srcDir "../config/dev"
         }
     }
     test {
         resources {
-            srcDir "config/test"
+            srcDir "../config/test"
         }
     }
     integrationTest {
@@ -48,6 +48,7 @@ dependencies {
     // CorDapp dependencies
     // Specify your CorDapp's dependencies below, including dependent CorDapps.
     cordapp project(":cordapp-contracts-states")
+    compile 'io.bluebank.braid:braid-corda:3.2.1'
 }
 
 task integrationTest(type: Test, dependsOn: []) {

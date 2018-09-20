@@ -147,8 +147,10 @@ task deployNodes(type: net.corda.plugins.Cordform, dependsOn: ['jar']) {
     }
 }
 
-task runTemplateClient(type: JavaExec) {
-    classpath = sourceSets.main.runtimeClasspath
-    main = 'com.template.ClientKt'
-    args 'localhost:10006'
-}
+// Disable the web client as we're using braid
+//
+//task runTemplateClient(type: JavaExec) {
+//    classpath = sourceSets.main.runtimeClasspath
+//    main = 'com.template.ClientKt'
+//    args 'localhost:10006'
+//}

@@ -1,0 +1,8 @@
+{
+  "O=PartyA, L=London, C=GB": {
+    "port": 8081
+  },
+  "O=PartyB, L=New York, C=US": {
+    "port": 8082
+  }
+}
