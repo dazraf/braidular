@@ -8,7 +8,7 @@ For `@lennertr` :-)
 3. you should note in the logs that braid end-points are create for PartyA and PartyB on `http://localhost:8081/api` and `http://localhost:8082/api` respectively.
 4. please test that you can reach these in your browser
 5. install the angular cli: `npm install -g @angular/cli`
-6. in the `web` directory start the angular server using: `ng serve --open`
+6. in the [web](./web) directory start the angular server using: `ng serve --open`
 7. if everything goes ok, you should see the following 
 
 ![screenshot](screenshot.png)
