@@ -4,6 +4,7 @@ import { Proxy } from 'braid-client';
 // NOTE: I'm not too familiar with the more recent versions of angular
 // the following should probably go somewhere else!
 
+declare var window: any;
 const proxy = new Proxy({url: 'http://localhost:8081/api/'}, onOpen, onClose, onError, {strictSSL: false})
 
 function onOpen() {
